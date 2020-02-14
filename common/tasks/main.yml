@@ -1,0 +1,9 @@
+- host: all
+  become: yes
+  tasks:
+  - name: Install vim and zip
+    apt:
+      name:
+      - vim
+      - zip
+      state: latest
